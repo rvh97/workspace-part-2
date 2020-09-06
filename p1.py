@@ -10,7 +10,7 @@ test_set = keras.utils.normalize(test_set, axis=1)
 model = models.Sequential()
 
 # Add layers to the model
-# Write your own code
+# Write your own code here for steps 1-3
 # 1. Flatten the input
 # 2. Try adding 1-3 dense layers with varying units
 # 3. The output layer should be a Dense layer with 10 units, using activation=softmax
