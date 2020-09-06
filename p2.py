@@ -25,7 +25,7 @@ training_data_generator = data_generator.flow_from_directory(
     batch_size=batch_size,
 )
 
-validation_data_generator = data_generator.flow_from_directory(
+test_data_generator = data_generator.flow_from_directory(
     dataset_dir,
     target_size=(img_height, img_width),
     subset="validation",
@@ -48,5 +48,5 @@ model.summary()
 
 model.fit(
     training_data_generator,
-    validation_data=validation_data_generator,
+    validation_data=test_data_generator,
     epochs=3)
